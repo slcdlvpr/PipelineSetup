@@ -7,7 +7,7 @@ This model is then compared to an Azure AutoML run.
 
 ## Summary
 The classification goal of this project is to predict if the client will subscribe (yes/no) a term deposit (variable y).  The data used for the project was collected from 
-direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed.
+direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed. 
 
 
 The project was done both with a hyperparameter run and a autoML run with the objective to compare the results using both methods for accuracy.  The most accurate method was VotingEnsemble with an accuracy of .9164.  This was model was obtained as a result of the AutomML run. 
@@ -80,7 +80,7 @@ The below explanation gives the details of the best model prediction by highligh
 <img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/ModelExplanationAML.JPG" />
 
 ## Pipeline comparison
-The two methods produced very similar results with a slight edge in accuracy going to AutoML.  The AutoML run took longer and used a wider range of potential models to test for the most accurate.  The steps for preparing each run were similar.  
+The two methods produced very similar results with a slight edge in accuracy going to AutoML.  The AutoML run took longer and used a wider range of potential models to test for the most accurate.  The steps for preparing each run were similar.  Overall the results from each run where very close in Accuracy.  
 
 ## Future work
 One of the DATA GUARDRAILS triggered during the AutoML run.  The nature of the trigger was -- Imbalanced data can lead to a falsely perceived positive effect of a model's accuracy -- so there is probably some tweaks that could be made to the split on the training/testing data. 
