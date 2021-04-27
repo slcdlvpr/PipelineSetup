@@ -10,9 +10,8 @@ import pandas as pd
 from azureml.core.run import Run
 from azureml.data.dataset_factory import TabularDatasetFactory
 
-data_link = "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
-
-ds = TabularDatasetFactory.from_delimited_files(path=data_link)
+repo_link = "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
+ds = TabularDatasetFactory.from_delimited_files(path=repo_link)
 
 
 def clean_data(data):
@@ -41,12 +40,10 @@ def clean_data(data):
 
     y_df = x_df.pop("y").apply(lambda s: 1 if s == "yes" else 0)
     
-    return x_df, y_df
+    return x_df, y_df  ##ugh this line caused failure didn't catch this until many runs later 
 
 
 x, y = clean_data(ds)
-
-# TODO: Split data into train and test sets.
 
 ### YOUR CODE HERE ###
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.3)
