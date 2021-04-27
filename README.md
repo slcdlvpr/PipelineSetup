@@ -55,7 +55,7 @@ I used RandomParameterSampling because it supports both discrete and continuous 
 
 
 
-## AutoML
+## AutoML Setup
 AutoML setup process was similar to setup for the hyperparameter run. 
 <ol>
   <li> Import data using <i>TabularDatasetFactory</i></li>
@@ -65,7 +65,7 @@ AutoML setup process was similar to setup for the hyperparameter run.
   <li> Save the best model generated </li>
 </ol>
 
-##AutoML
+## AutoML 
 
 The below explanation gives the details of the best model prediction by highlighting feature importance values and discovering patterns in data at training time. It also shows differnt metrics and their value for model.
 
