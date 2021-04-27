@@ -12,6 +12,10 @@ direct marketing campaigns of a Portuguese banking institution. The marketing ca
 
 The project was done both with a hyperparameter run and a autoML run with the objective to compare the results using both methods for accuracy.  The most accurate method was VotingEnsemble with an accuracy of .9164.  This was model was obtained as a result of the AutomML run. 
 
+Below is a diagram showing the major componenets of the project. 
+
+<img src ="https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/Summary.JPG"/>
+
 
 ## Scikit-learn Pipeline
 The major steps for preparing the pipeline are common for all machine learning.  Import, Clean, Split Data and select a model 
