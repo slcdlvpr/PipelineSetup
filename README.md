@@ -10,7 +10,7 @@ The classification goal of this project is to predict if the client will subscri
 direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed.
 
 
-The project was done both with a hyperparameter run and a autoML run with the objective to compare the results using both methods for accuracy.  The most accurate method was VotingEnsemble with an accuracy of .9174.  This was model was obtained as a result of the AutomML run. 
+The project was done both with a hyperparameter run and a autoML run with the objective to compare the results using both methods for accuracy.  The most accurate method was VotingEnsemble with an accuracy of .9164.  This was model was obtained as a result of the AutomML run. 
 
 
 ## Scikit-learn Pipeline
