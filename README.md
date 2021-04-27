@@ -44,6 +44,9 @@ The best Model from the Hyperdrive run is listed below. </p>
 <i>ID :  HD_5355379d-5443-42ae-9375-61cf4708bf81_1
 Metrics :  {'Regularization Strength:': 10.0, 'Max iterations:': 50, 'Accuracy': 0.914921598381386} </i>
 
+<img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/Cleanup.JPG" />
+
+
 <strong>Parameter Sampling</strong>
 I used RandomParameterSampling because it supports both discrete and continuous hyperparameters. It supports early termination of low-performance runs and supports early stopping policies.  In random sampling, hyperparameter values are randomly selected from the defined search space. This sampling technique was shown to be comparable to full grid sampling results in earlier labs.  
 
@@ -72,5 +75,4 @@ One of the DATA GUARDRAILS triggered during the AutoML run.  The nature of the t
 
 
 ## Proof of cluster clean up
-**If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
-**Image of cluster marked for deletion**
+<img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/Cleanup.JPG"/>
