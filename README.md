@@ -85,11 +85,13 @@ The below explanation gives the details of the best model prediction by highligh
 
 <img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/ModelExplanationAML.JPG" />
 
-Parameters on best model:
+Parameters on best AL model:
+
+AUC Graph:
 <img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/AUC%20ML.JPG" />
 
-Graph:
-<img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/AUC%20ML.JPG" />
+Parameters:
+<img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/ParametersAL.JPG" />
 
 
 
