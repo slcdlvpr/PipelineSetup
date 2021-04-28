@@ -51,8 +51,14 @@ Metrics :  {'Regularization Strength:': 10.0, 'Max iterations:': 50, 'Accuracy':
 <img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/hyperparameter.JPG" />
 
 
+
 <strong>Parameter Sampling</strong>
-I used RandomParameterSampling because it supports both discrete and continuous hyperparameters. It supports early termination of low-performance runs and supports early stopping policies.  In random sampling, hyperparameter values are randomly selected from the defined search space. This sampling technique was shown to be comparable to full grid sampling results in earlier labs.  
+I used RandomParameterSampling because it supports both discrete and continuous hyperparameters. It supports early termination of low-performance runs and supports early stopping policies.  In random sampling, hyperparameter values are randomly selected from the defined search space. This sampling technique was shown to be comparable to full grid sampling results in earlier labs. 
+
+## HyperParameter Definitions
+In our random sampling approach the following are explanations of the hyperparameters used;  C: smaller values specify stronger regularization, 
+max_iter : maximum number of iterations taken for the solvers to converge values are randomly selected from the defined value ranges. 
+
 
 <strong>Early Stopping Policy</strong>
 <p> The early stopping policy I chose was Bandit Policy because it is based on slack factor and evaluation interval. Bandit terminates runs where the primary metric is not within the specified slack factor compared to the best performing run. <a href = 'https://docs.microsoft.com/en-us/python/api/azureml-train-core/azureml.train.hyperdrive.banditpolicy?view=azure-ml-py&preserve-view=true#&preserve-view=truedefinition'> More Info</a></p
@@ -81,6 +87,12 @@ The below explanation gives the details of the best model prediction by highligh
 
 ## Pipeline comparison
 The two methods produced very similar results with a slight edge in accuracy going to AutoML.  The AutoML run took longer and used a wider range of potential models to test for the most accurate.  The steps for preparing each run were similar.  Overall the results from each run where very close in Accuracy.  
+
+
+## Approach Comparsion
+Both approaches use similiar preparation steps, but very differnt processes during their respective runs. Regression + Hyperdrive uses a fixed model then uses hyperdrive to find optimal parameters from the range of values provided.  
+In AutoML the processes generates different models with their own parameters and then selects best model. The Hyperdrive run was signficantly faster and took about half the time of the AutoML run.  In this experiment the accuracy was comparable between the two Hyperdrive: .914  AutoML: .916.  
+
 
 ## Future work
 One of the DATA GUARDRAILS triggered during the AutoML run.  The nature of the trigger was -- Imbalanced data can lead to a falsely perceived positive effect of a model's accuracy -- so there is probably some tweaks that could be made to the split on the training/testing data. 
