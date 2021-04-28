@@ -105,9 +105,10 @@ In AutoML the processes generates different models with their own parameters and
 
 
 ## Future work
-To check or measure the fairness of the models
-Analyze different models to look at performance and tradoffs with accuracy
- 
+<ol>
+  <li>To check or measure the fairness of the models</li>
+  <li>Analyze different models to look at performance and tradoffs with accuracy</li>
+</ol>
 
 ## Proof of cluster clean up
 <img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/Cleanup.JPG"/>
