@@ -82,6 +82,7 @@ The below explanation gives the details of the best model prediction by highligh
 <img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/AutoML.JPG" />
 
 ## AL Model Explanation:
+Below shows the details for the most accurate model in our AutoML run.  
 
 <img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/ModelExplanationAML.JPG" />
 
