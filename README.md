@@ -85,6 +85,9 @@ The below explanation gives the details of the best model prediction by highligh
 
 <img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/ModelExplanationAML.JPG" />
 
+Parameters on best model 
+
+
 ## Pipeline comparison
 The two methods produced very similar results with a slight edge in accuracy going to AutoML.  The AutoML run took longer and used a wider range of potential models to test for the most accurate.  The steps for preparing each run were similar.  Overall the results from each run where very close in Accuracy.  
 
@@ -95,8 +98,9 @@ In AutoML the processes generates different models with their own parameters and
 
 
 ## Future work
-One of the DATA GUARDRAILS triggered during the AutoML run.  The nature of the trigger was -- Imbalanced data can lead to a falsely perceived positive effect of a model's accuracy -- so there is probably some tweaks that could be made to the split on the training/testing data. 
-
+To check or measure the fairness of the models
+Analyze different models to look at performance and tradoffs with accuracy
+ 
 
 ## Proof of cluster clean up
 <img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/Cleanup.JPG"/>
