@@ -82,7 +82,7 @@ The below explanation gives the details of the best model prediction by highligh
 <img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/AutoML.JPG" />
 
 ## AL Model Explanation:
-Below shows the details for the most accurate model in our AutoML run.  
+Below shows the details for the most accurate model in our AutoML run. The model that provided best results was VotingEnsemble.  A voting ensemble (or a “majority voting ensemble“) is an ensemble machine learning model that combines the predictions from multiple other models. It is a technique that may be used to improve model performance, ideally achieving better performance than any single model used in the ensemble. Read more <a href="https://machinelearningmastery.com/voting-ensembles-with-python/#:~:text=A%20voting%20ensemble%20(or%20a,model%20used%20in%20the%20ensemble.">here</a>
 
 <img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/ModelExplanationAML.JPG" />
 
