@@ -81,16 +81,16 @@ The below explanation gives the details of the best model prediction by highligh
 
 <img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/AutoML.JPG" />
 
-## Model Explanation:
+## AL Model Explanation:
 
 <img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/ModelExplanationAML.JPG" />
 
-Parameters on best AL model:
+Parameters:
 
-AUC Graph:
+<p>AUC Graph: </p>
 <img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/AUC%20ML.JPG" />
 
-Parameters:
+<p> Run Metrics Details:</p>
 <img src = "https://github.com/slcdlvpr/PipelineSetup/blob/main/Images/ParametersAL.JPG" />
 
 
